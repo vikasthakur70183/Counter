@@ -12,6 +12,7 @@ function App() {
         <div className='Div_btn' >
           {count < 20 && <button className="btn" onClick={() => setCount((count) => count + 1)}>+</button>}
           {count > 0 && <button className="btn" onClick={() => setCount((count) => count - 1)}>-</button>}
+          {count > 0 && <button className='btn' onClick={() => setCount((count) => 0)}>Reset</button>}
         </div>
       </div>
     </>
